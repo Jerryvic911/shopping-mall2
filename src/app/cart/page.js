@@ -13,13 +13,22 @@ function Cart() {
     <div className="h-full bg-secondary text-black">
       <Navbar />
 
-      <div className="grid grid-cols-4 mt-[5rem] ml-20 pr-20 gap-7">
+        <div className="flex">
+
+        
+      <div className=" mt-[5rem] ml-20">
           <Orders/>
+         
       </div>
 
-      <div className="text-center">
-        {/* Open the modal using document.getElementById('ID').showModal() method */}
-        <button
+      <div className="text-center ml-5 bg-white w-[12rem] h-[10rem] mt-20">
+        <div className=" ml- pt-5">
+          <h1 className="font-bold text-lg">Order Summary</h1>
+          <p className="font-medium">Total price:$300</p>
+        </div>
+       
+       <div className="pr-6">
+       <button
           className="btn bg-primary rounded-md px-5 py-2 mt-7 text-white ml-10 "
           onClick={() => document.getElementById("my_modal_1").showModal()}
         >
@@ -46,6 +55,9 @@ function Cart() {
             </div>
           </div>
         </dialog>
+       </div>
+        
+      </div>
       </div>
 
       <Footer />

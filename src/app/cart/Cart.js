@@ -5,7 +5,7 @@ import Backpack from "@/Images/Backpack.png"
 function Orders() {
   return (
     <div>
-      <div className=" bg-secondary shadow-md rounded-md shadow-slate-400/70 w-[60rem] h-[8rem] flex">
+      <div className=" bg-secondary shadow-md rounded-md shadow-slate-400/70 w-[50rem] h-[8rem] flex">
         <Image
         src={Backpack}
         width={100}
@@ -18,7 +18,7 @@ function Orders() {
           <p>Description: Traveling bag</p>
         </div>
       </div>
-      <div className=" bg-secondary mt-5 shadow-md rounded-md shadow-slate-400/70 w-[60rem] h-[8rem] flex">
+      <div className=" bg-secondary mt-5 shadow-md rounded-md shadow-slate-400/70 w-[50rem] h-[8rem] flex">
         <Image
         src={Backpack}
         width={100}
@@ -31,7 +31,7 @@ function Orders() {
           <p>Description: Traveling bag</p>
         </div>
       </div>
-      <div className=" bg-secondary mt-5 shadow-md rounded-md shadow-slate-400/70 w-[60rem] h-[8rem] flex">
+      <div className=" bg-secondary mt-5 shadow-md rounded-md shadow-slate-400/70 w-[50rem] h-[8rem] flex">
         <Image
         src={Backpack}
         width={100}

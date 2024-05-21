@@ -1,8 +1,13 @@
-import React, { useState, useEffect } from "react";
+import ShopContext from "@/context/Shop-Context";
+import React, { useState, useEffect, useContext } from "react";
+
 
 export function Modal(props) {
-  const { productImage, productName, price, productInfo } = props.currentProduct;
+  const {id, productImage, productName, price, productInfo } = props.currentProduct;
   const { closeModal } = props.closeModal;
+ 
+  
+  
 
   return (
     <>
@@ -26,7 +31,7 @@ export function Modal(props) {
                 close
               </button>
               <button
-                onClick={() => props.closeModal()}
+              
                 className="btn ml-[10rem] border-[#f8dbb3] border-2  hover:bg-primary w-[9rem] h-[2rem] rounded-lg hover:text-white "
                 type="submit"
               >

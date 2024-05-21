@@ -9,14 +9,18 @@ import { Modal } from '../components/Modal';
 function Cart() {
   let [isOpen, setIsOpen] = useState(false)
   let [currentProduct, setCurrentProduct] = useState()
-  const toggleModal = (productImage, productName, price, productInfo) => {
+
+
+  const toggleModal = (id,  productName, productImage, price, productInfo) => {
     setIsOpen(!isOpen)
-    console.log(productName, "from page")
-    setCurrentProduct({productImage, productName, price, productInfo})
+    setCurrentProduct({id, productImage, productName, price, productInfo})
   }
    const closeModal = () =>{
     setIsOpen(false)
    }
+
+
+   console.log(currentProduct, "current pro")
   
 
   return (

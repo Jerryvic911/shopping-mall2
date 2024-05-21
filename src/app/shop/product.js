@@ -18,7 +18,7 @@ const Product = (props) => {
         <div className="text-center">
           <button
             className="border-[#f8dbb3] border-2  hover:bg-primary w-[9rem] h-[2rem] rounded-lg hover:text-white mt-4"
-            onClick={() => props.toggleModal(productImage, productName, price, productInfo)}
+            onClick={() => props.toggleModal(id,  productName, productImage, price, productInfo)}
           >
             <div className="flex justify-center gap-3 ">
               <svg

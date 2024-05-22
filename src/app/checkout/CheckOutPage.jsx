@@ -1,8 +1,11 @@
+"use client";
 import Link from 'next/link'
-import React from 'react'
 import InputDetails from './InputDetails'
+import React from "react";
 
 function CheckOutPage() {
+
+ 
   return (
     <div>
         <div className='bg-white h-12 flex'>

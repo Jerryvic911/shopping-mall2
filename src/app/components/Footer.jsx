@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="mt-20 h-screen text-black">
+    <div className="mt-20 h-screen w-full text-black">
       <div className=" text-center">
         <h1 className=" capitalize text-3xl  font-semibold">Subscribe to our newsletter</h1>
         <h3 className="mt-5 text-base text-[#d1cac2]">Sign up and get cutting edge marketing insights</h3>
@@ -29,7 +29,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="flex flex-row mt-20 ml-20">
+      <div className="flex flex-row mt-20 ml-40 justify-between">
         {/**Icons */}
         <div>
           <h1 className=" text-primary font-bold text-3xl">BWE</h1>
@@ -91,7 +91,7 @@ function Footer() {
         </div>
 
         {/**Information */}
-        <div className="flex flex-row ml-[23rem] gap-[5rem]">
+        <div className="flex flex-row mr-[10rem] gap-[5rem]">
 
 
           <div>
@@ -130,7 +130,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="mt-[5rem] ml-[4.5rem] w-[70rem] border-t-2 border-black ">
+      <div className="mt-[5rem] ml-[3rem] mr-3 w-auto  border-t-2 border-black ">
 
         <div className="pt-[3.5rem] flex justify-between">
 <h2>@2022 BWE. All rights reserved</h2>

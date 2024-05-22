@@ -5,11 +5,12 @@ import Hat from "@/Images/Hat.jpg"
 import Bag from "@/Images/Bag.jpg"
 import Sweater from "@/Images/Sweater.jpg"
 import Link from "next/link";
+import Perks from "./Perks";
 
 function Cards() {
   return (
     <div>
-      <div className="pt-[4rem] mt-5 h-screen bg-[#faf0e6] text-black">
+      <div className="pt-[4rem] mt-5 h-full bg-[#faf0e6] text-black">
         <div className="text-center">
           <h1 className=" font-medium text-4xl uppercase">
             Featured Categories
@@ -195,7 +196,10 @@ function Cards() {
           
         </div>
         </Link>
+        <Perks/>
       </div>
+
+    
     </div>
   );
 }

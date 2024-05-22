@@ -1,6 +1,21 @@
-import React from "react";
+"use client";
+import { useRecoilValue } from "recoil";
+import { cartAtom } from "../atoms/cart";
+import React, { useEffect, useState } from "react";
 
 function InputDetails() {
+  const [total, setTotal] = useState(0);
+  const carts = useRecoilValue(cartAtom);
+
+  useEffect(() => {
+    if (carts.length > 0) {
+      const totalAmount = carts.reduce(
+        (acc, curr) => acc + parseInt(curr.price) * curr.qty,
+        0
+      );
+      setTotal(totalAmount);
+    }
+  }, [carts]);
   return (
     <div className="ml-20 mt-7">
       <div className="flex">
@@ -252,9 +267,13 @@ function InputDetails() {
             Order summary
           </h1>
 
-          <h3 className="border-b-2 mt-3 pl-5 font-medium">Item total(3): $300</h3>
+          <h3 className="border-b-2 mt-3 pl-5 font-medium">
+            Item total ({carts.reduce((acc, curr) => acc + curr.qty, 0)})
+          </h3>
 
-          <h1 className="border-b-2 mt-3 pl-5 font-bold text-2xl">Total: $300</h1>
+          <h1 className="border-b-2 mt-3 pl-5 font-bold text-2xl">
+            Total: ${total}
+          </h1>
 
           <button
             type="button"

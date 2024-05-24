@@ -26,7 +26,7 @@ function InputDetails() {
 			name: checkutDetails.fullName,
 			phone: checkutDetails.phoneNumber,
 		},
-		publicKey: "pk_test_efd18e8f7518e4a0149ea6cfbea8164668de914b",
+		publicKey: "",
 		text: "Confirm",
 
 		onSuccess: () => {

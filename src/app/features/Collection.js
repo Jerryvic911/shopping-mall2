@@ -3,7 +3,8 @@ import Image from "next/image";
 import Shoe from "@/Images/Shoe.png";
 import Backpack from "@/Images/Backpack.png";
 import Watch from "@/Images/Watch.jpg";
-
+import Link from 'next/link';
+Link
 function Collection() {
   return (
     <div>
@@ -31,12 +32,12 @@ function Collection() {
                 <h1 className="ml-4 pt-3 font-semibold text-2xl">
                   Bag Collection
                 </h1>
-                <a
+                <Link
                   href="/"
                   className="text-text-primary font-medium text-sm underline ml-4"
                 >
                   Shop Now
-                </a>
+                </Link>
               </div>
               
             </div>
@@ -56,12 +57,12 @@ function Collection() {
               />
               <div className=" pt-3 bg-white w-[14rem] h-[5.1rem]">
                 <h1 className="text-2xl ml-4 font-semibold">Shoe collection</h1>
-                <a
+                <Link
                   href="/"
                   className=" text-text-primary font-medium text-sm underline ml-4"
                 >
                   Shop Now
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -83,12 +84,12 @@ function Collection() {
                   Watches Collection
                 </h1>
                 
-                <a
+                <Link
                   href="/cart"
                   className=" text-text-primary font-medium text-sm underline ml-4"
                 >
                   Shop Now
-                </a>
+                </Link>
                 
               </div>
             </div>

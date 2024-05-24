@@ -3,8 +3,6 @@ import Image from "next/image";
 import Shoe from "@/Images/Shoe.png";
 import Backpack from "@/Images/Backpack.png";
 import Watch from "@/Images/Watch.jpg";
-import "../components/Navbar.css"
-import Link from 'next/link';
 
 function Collection() {
   return (

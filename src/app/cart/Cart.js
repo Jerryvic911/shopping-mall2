@@ -4,28 +4,28 @@ import { cartAtom } from "../atoms/cart";
 import Link from "next/link";
 
 function Orders() {
-  const [carts, setCart] = useRecoilState(cartAtom);
+	const [carts, setCart] = useRecoilState(cartAtom);
 
-  const deleteProduct = (id) => {
-    const newCart = carts.filter((product) => product.id !== id);
-    setCart(newCart);
-  };
+	const deleteProduct = (id) => {
+		const newCart = carts.filter((product) => product.id !== id);
+		setCart(newCart);
+	};
 
-  const increaseQuantity = (id) => {
-    const updatedCart = carts.map((product) =>
-      product.id === id ? { ...product, qty: product.qty + 1 } : product
-    );
-    setCart(updatedCart);
-  };
+	const increaseQuantity = (id) => {
+		const updatedCart = carts.map((product) =>
+			product.id === id ? { ...product, qty: product.qty + 1 } : product
+		);
+		setCart(updatedCart);
+	};
 
-  const decreaseQuantity = (id) => {
-    const updatedCart = carts.map((product) =>
-      product.id === id && product.qty > 1
-        ? { ...product, qty: product.qty - 1 }
-        : product
-    );
-    setCart(updatedCart);
-  };
+	const decreaseQuantity = (id) => {
+		const updatedCart = carts.map((product) =>
+			product.id === id && product.qty > 1
+				? { ...product, qty: product.qty - 1 }
+				: product
+		);
+		setCart(updatedCart);
+	};
 
   return (
     <div>
@@ -41,7 +41,6 @@ function Orders() {
                 <div>
                   <h1 className="font-bold text-lg">{product.name}</h1>
                   <h2 className="font-medium">${product.price}</h2>
-                  <p><span>{product.price * product.qty}</span></p>
                 </div>
                
               </div>

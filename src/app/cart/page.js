@@ -5,25 +5,24 @@ import Footer from "../components/Footer";
 import Orders from "./Cart";
 import Link from "next/link";
 import { useRecoilValue } from "recoil";
-import { cartAtom } from "../atoms/cart";
+import {  totalAmountSelector } from "../atoms/cart";
 
 function Cart() {
   const [total, setTotal] = useState(0);
   const carts = useRecoilValue(cartAtom);
 
   useEffect(() => {
-    if (carts.length > 0) {
-      const totalAmount = carts.reduce(
-        (acc, curr) => acc + parseInt(curr.price) * curr.qty,
-        0
-      );
-      setTotal(totalAmount);
-    }
-  }, [carts]);
+   if(carts.length > 0){
+    const totalAmount = carts.reduce((acc, curr) => acc + parseInt(curr.price) * curr.qty, 0);
+   setTotal(totalAmount)
+   }
+  }, [carts])
 
-  return (
-    <div className="h-full bg-secondary text-black">
-      <Navbar />
+
+  console.log(total, "total")
+	return (
+		<div className="h-full bg-secondary text-black">
+			<Navbar />
 
       <div className="flex flex-col md:flex-row justify-between">
         {/* Left column */}

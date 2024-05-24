@@ -1,10 +1,12 @@
 import React from 'react'
 import Image from "next/image";
 import Man from "@/Images/Man.png";
+import "../components/Navbar.css"
+
 
 function Body() {
   return (
-    <div>
+    <div className='body'>
         <div className=" flex flex-row justify-between items-center ml-14">
       
       <div className="mb-[10rem]">
@@ -34,7 +36,7 @@ function Body() {
       </div>
       
      
-
+      <div className=" img-hide">
       <Image
         src={Man}
         alt="man"
@@ -42,9 +44,11 @@ function Body() {
         height={500}
         className="mt-20"
       />
+      </div>
+      
     </div>
 
-    <div className=""></div>
+    
     </div>
   )
 }

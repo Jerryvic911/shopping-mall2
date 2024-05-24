@@ -6,6 +6,7 @@ import Bag from "@/Images/Bag.jpg"
 import Sweater from "@/Images/Sweater.jpg"
 import Link from "next/link";
 import Perks from "./Perks";
+import "../components/Navbar.css"
 
 function Cards() {
   return (
@@ -16,7 +17,7 @@ function Cards() {
             Featured Categories
           </h1>
 
-          <div className="  text-amber-950 font-semibold text-lg mt-6">
+          <div className=" text-amber-950 font-semibold text-lg mt-6">
             <ul className="flex gap-12 items-center  justify-center cursor-pointer">
               <li className=" hover:underline">All</li>
               <li  className=" hover:underline">Latest</li>
@@ -29,8 +30,9 @@ function Cards() {
 
         {/*Featured catigories Card */}
 
-        <div className="ml-10 flex flex-row gap-6 justify-center mt-12">
+        <div className="card ml-10 flex flex-row gap-6 justify-center mt-12">
 
+          
           <div className=" bg-black w-[13rem] h-[20rem] text-center  rounded-md">
             <Image
               src={Glasses}

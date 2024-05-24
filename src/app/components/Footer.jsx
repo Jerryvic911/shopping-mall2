@@ -1,8 +1,9 @@
 import React from "react";
+import "../components/Navbar.css"
 
 function Footer() {
   return (
-    <div className="mt-20 h-screen w-full text-black">
+    <div className="mt-20 h-full w-full text-black ">
       <div className=" text-center">
         <h1 className=" capitalize text-3xl  font-semibold">Subscribe to our newsletter</h1>
         <h3 className="mt-5 text-base text-[#d1cac2]">Sign up and get cutting edge marketing insights</h3>
@@ -29,7 +30,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="flex flex-row mt-20 ml-40 justify-between">
+      <div className="footer flex flex-row mt-20 ml-40 justify-between">
         {/**Icons */}
         <div>
           <h1 className=" text-primary font-bold text-3xl">BWE</h1>

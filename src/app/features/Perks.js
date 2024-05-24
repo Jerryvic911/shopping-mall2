@@ -1,9 +1,10 @@
 import React from 'react'
+import "../components/Navbar.css"
 
 function Perks() {
   return (
     <div>
-      <div className="flex flex-box justify-center pt-[10rem]   uppercase text-lg font-semibold">
+      <div className="perks flex flex-box justify-center pt-[10rem]   uppercase text-lg font-semibold">
         <div className=" w-[13rem] h-[13rem]  hover:bg-[#fef7f1] ease-in-out transition">
           <div className="mt-[2rem] ml-[4rem] bg-white w-[5rem] h-[5rem] py-5 ">
             <svg

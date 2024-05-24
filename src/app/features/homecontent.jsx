@@ -5,7 +5,6 @@ import Footer from "@/app/components/Footer";
 import Cards from "./Cards";
 import Body from "./Body";
 import Collection from "./Collection";
-import Perks from "./Perks";
 
 
 function HomeContent() {

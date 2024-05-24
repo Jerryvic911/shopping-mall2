@@ -147,10 +147,10 @@ function InputDetails() {
                 <summary className=" text-black bg-white"></summary>
                 <ul className="p-2 shadow menu dropdown-content z-[1] bg-white rounded-box w-52">
                   <li>
-                    <a>Item 1</a>
+                    Item 1
                   </li>
                   <li>
-                    <a>Item 2</a>
+                    Item 2
                   </li>
                 </ul>
               </details>
@@ -162,10 +162,10 @@ function InputDetails() {
                 <summary className=" text-black bg-white"></summary>
                 <ul className="p-2 shadow menu dropdown-content z-[1] bg-white rounded-box w-52">
                   <li>
-                    <a>Item 1</a>
+                    Item 1
                   </li>
                   <li>
-                    <a>Item 2</a>
+                    Item 2
                   </li>
                 </ul>
               </details>

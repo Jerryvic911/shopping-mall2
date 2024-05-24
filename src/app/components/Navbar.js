@@ -1,10 +1,11 @@
 import React from "react";
 import Input from "./Input";
 import Link from "next/link";
+import "./Navbar.css"
 
 function Navbar() {
   return (
-    <div className="flex flex-row justify-between items-center pt-5 mr-10">
+    <div className="head flex flex-row justify-between items-center pt-5 mr-10 md:items-center">
         
      <div className="ml-12  pl-12 cursor-pointer">
         <ul className="flex gap-5 text-[#7c6037] text-lg font-bold">
@@ -21,7 +22,7 @@ function Navbar() {
 
 
 
-        <div className=" float-right mr-9">
+        <div className="search-hide float-right mr-9">
             <Input/>
         </div>
     </div>

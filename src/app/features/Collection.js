@@ -3,16 +3,18 @@ import Image from "next/image";
 import Shoe from "@/Images/Shoe.png";
 import Backpack from "@/Images/Backpack.png";
 import Watch from "@/Images/Watch.jpg";
+import "../components/Navbar.css"
+import Link from 'next/link';
 
 function Collection() {
   return (
-    <div>
-      <div className="mt-[4rem] ml-16 w-full ">
+    <div className=''>
+      <div className="mt-[4rem] ml-16 w-full collection ">
         <h2 className=" text-4xl font-semibold">
           <span className=" border-b-2 border-[#eea034]">Our</span> Collection
         </h2>
 
-        <div className="flex gap-5 rounded-md mt-10 mr-10 justify-center ">
+        <div className="img flex gap-5 rounded-md mt-10 mr-10 justify-center ">
           <div className="rounded-md">
             <div className="bg-[#fbebd4] w-[22rem] h-[25rem] ml-[1rem] rounded-md">
               <Image
@@ -31,12 +33,12 @@ function Collection() {
                 <h1 className="ml-4 pt-3 font-semibold text-2xl">
                   Bag Collection
                 </h1>
-                <a
+                <Link
                   href="/"
                   className="text-text-primary font-medium text-sm underline ml-4"
                 >
                   Shop Now
-                </a>
+                </Link>
               </div>
               
             </div>
@@ -56,12 +58,12 @@ function Collection() {
               />
               <div className=" pt-3 bg-white w-[14rem] h-[5.1rem]">
                 <h1 className="text-2xl ml-4 font-semibold">Shoe collection</h1>
-                <a
+                <Link
                   href="/"
                   className=" text-text-primary font-medium text-sm underline ml-4"
                 >
                   Shop Now
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -78,17 +80,17 @@ function Collection() {
                   objectFit: "cover",
                 }}
               />
-              <div className=" bg-white w-[14rem] h-[4.6rem] absolute top-[15.6rem]">
+              <div className=" bg-white w-[14rem] h-[4.6rem] absolute top-[15.6rem] left-5">
                 <h1 className="ml-4  font-semibold text-lg">
                   Watches Collection
                 </h1>
                 
-                <a
+                <Link
                   href="/cart"
                   className=" text-text-primary font-medium text-sm underline ml-4"
                 >
                   Shop Now
-                </a>
+                </Link>
                 
               </div>
             </div>
@@ -98,7 +100,7 @@ function Collection() {
          
           
           <button
-            className=" border-2 w-[10rem] h-12 mt-5 mb-5 rounded-md border-[#f8dbb3]  bg-transparent ml-[60rem]
+            className="collection-btn border-2 w-[10rem] h-12 mt-5 mb-5 rounded-md border-[#f8dbb3]  bg-transparent ml-[60rem]
         hover:bg-primary hover:text-white ease-in transition"
           >
             Discover Now

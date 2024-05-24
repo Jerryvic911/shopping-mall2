@@ -1,26 +1,30 @@
 "use client";
-import React, { useState } from "react";
+import "../components/Navbar.css"
 
 const Product = (props) => {
   const { id, productName, productImage, price, productInfo  } = props.data;
   const {toggleModal} = props.toggleModal
   
   return (
-    <div className="">
-      <img className="w-[15rem] h-[18rem]  bg-white " src={productImage} />
-      <div className=" bg-white w-[15rem] h-[7.9rem]">
+    <div >
+
+      <div className="product">
+
+     
+      <img className="img w-[15rem] h-[18rem]  bg-white " src={productImage} />
+      <div className="preview-btn bg-white w-[15rem] h-[7.9rem]">
         <div className=" pt-3 pl-5 uppercase">
           <h1 className="font-bold text-xl ">{productName}</h1>
           <p className="font-medium">${price}</p>
           
         </div>
 
-        <div className="text-center">
+        <div className="text-center ">
           <button
-            className="border-[#f8dbb3] border-2  hover:bg-primary w-[9rem] h-[2rem] rounded-lg hover:text-white mt-4"
+            className=" border-[#f8dbb3] border-2  hover:bg-primary w-[9rem] h-[2rem] rounded-lg hover:text-white mt-4"
             onClick={() => props.toggleModal(id,  productName, productImage, price, productInfo)}
           >
-            <div className="flex justify-center gap-3 ">
+            <div className=" flex justify-center gap-3 ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -43,9 +47,11 @@ const Product = (props) => {
               Preview
             </div>
           </button>
+          </div>
          {/* {isOpen && <Modal/>}  */}
         </div>
       </div>
+      
     </div>
   );
 };

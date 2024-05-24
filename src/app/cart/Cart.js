@@ -41,6 +41,7 @@ function Orders() {
                 <div>
                   <h1 className="font-bold text-lg">{product.name}</h1>
                   <h2 className="font-medium">${product.price}</h2>
+                  <p><span>{product.price * product.qty}</span></p>
                 </div>
                
               </div>

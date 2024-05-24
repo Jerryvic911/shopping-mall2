@@ -5,18 +5,11 @@ import Footer from "../components/Footer";
 import Orders from "./Cart";
 import Link from "next/link";
 import { useRecoilValue } from "recoil";
-import { cartAtom } from "../atoms/cart";
+import {  totalAmountSelector } from "../atoms/cart";
 
 function Cart() {
-  const [total, setTotal] = useState(0);
-  const carts = useRecoilValue(cartAtom);
+	const total = useRecoilValue(totalAmountSelector)
 
-  useEffect(() => {
-   if(carts.length > 0){
-    const totalAmount = carts.reduce((acc, curr) => acc + parseInt(curr.price) * curr.qty, 0);
-   setTotal(totalAmount)
-   }
-  }, [carts])
 
 
   console.log(total, "total")

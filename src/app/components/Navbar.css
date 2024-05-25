@@ -51,17 +51,12 @@
         gap: 10px; 
     }
 
-    .product .img{
-        width: 20rem;
-        height: 10rem;
-        top: 5rem;
-        background-color: transparent;
-        
-    }
-
-    .preview-btn{
-        width: 10rem;
-        top: 20px;
-        height: 5px auto auto auto ;
+    .main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      
+        align-items: center;
+        justify-content: center;
     }
 }

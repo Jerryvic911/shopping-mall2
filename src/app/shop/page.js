@@ -5,6 +5,7 @@ import React, {useState} from 'react'
 import Product from "@/app/shop/product"
 import Footer from '../components/Footer';
 import { Modal } from '../components/Modal';
+import "@/app/components/Navbar.css"
 
 function Cart() {
   let [isOpen, setIsOpen] = useState(false)
@@ -26,7 +27,7 @@ function Cart() {
   return (
     <div className=' bg-secondary h-full text-black'>
       <Navbar/>
-      <div className='grid grid-cols-4 mt-[5rem] ml-20 mr-20 gap-7'>
+      <div className='main grid grid-cols-4 mt-[5rem] ml-20 mr-20 gap-7'>
         {PRODUCTS.map ((product) =><Product data={product} toggleModal={toggleModal}/>)}
       </div>
       <div>

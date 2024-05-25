@@ -11,6 +11,7 @@ function InputDetails() {
 	const clearCart = useResetRecoilState(cartAtom);
 	const [checkutDetails, setCheckoutDetails] = useRecoilState(checkoutAtom);
 	const clearCheckoutDetails = useResetRecoilState(checkoutAtom);
+  
 
 	const handleChange = (event) => {
 		const { name, value } = event.target;
@@ -26,7 +27,7 @@ function InputDetails() {
 			name: checkutDetails.fullName,
 			phone: checkutDetails.phoneNumber,
 		},
-		publicKey: "",
+		publicKey: "pk_test_e66822d2e3553a1dd1143d6dbcb609e62dbab7ac",
 		text: "Confirm",
 
 		onSuccess: () => {
@@ -36,7 +37,7 @@ function InputDetails() {
 	};
 
 	return (
-		<div className="ml-20 mt-7">
+		<div className="ml-20 mt-7 h-screen">
 			<div className="flex">
 				<div className="bg-white pl-4 rounded-md shadow-md ">
 					<div className="flex gap-5 mt-4 ">

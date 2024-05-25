@@ -3,7 +3,7 @@ import "../components/Navbar.css"
 
 function Footer() {
   return (
-    <div className="mt-20 h-full w-full text-black ">
+    <div className="mt-20 h-full w-screen text-black ">
       <div className=" text-center">
         <h1 className=" capitalize text-3xl  font-semibold">Subscribe to our newsletter</h1>
         <h3 className="mt-5 text-base text-[#d1cac2]">Sign up and get cutting edge marketing insights</h3>

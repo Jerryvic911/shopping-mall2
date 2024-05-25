@@ -3,11 +3,12 @@ import Image from "next/image";
 import Shoe from "@/Images/Shoe.png";
 import Backpack from "@/Images/Backpack.png";
 import Watch from "@/Images/Watch.jpg";
+import Link from 'next/link';
 
 function Collection() {
   return (
     <div className=''>
-      <div className="mt-[4rem] ml-16 w-full collection ">
+      <div className="mt-[4rem] ml-16 collection ">
         <h2 className=" text-4xl font-semibold">
           <span className=" border-b-2 border-[#eea034]">Our</span> Collection
         </h2>

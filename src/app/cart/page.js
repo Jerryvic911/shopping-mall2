@@ -5,7 +5,8 @@ import Footer from "../components/Footer";
 import Orders from "./Cart";
 import Link from "next/link";
 import { useRecoilValue } from "recoil";
-import {  totalAmountSelector } from "../atoms/cart";
+import  {totalAmountSelector} from "@/app/atoms/cart"
+import  {cartAtom} from "@/app/atoms/cart"
 
 function Cart() {
   const [total, setTotal] = useState(0);

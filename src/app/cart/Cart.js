@@ -35,32 +35,32 @@ function Orders() {
             key={product.id}
             className="my-4 bg-secondary gap-5 shadow-md rounded-md shadow-slate-400/70 w-[50rem] h-[8rem] flex items-center"
           >
-            <img src={product.img} className="h-[8rem] w-[8rem]" alt={product.name} />
+            <img src={product.img} className="h-[8rem] w-[8rem]" alt={product?.name} />
             <div className="">
               <div className="flex">
                 <div>
-                  <h1 className="font-bold text-lg">{product.name}</h1>
-                  <h2 className="font-medium">${product.price}</h2>
+                  <h1 className="font-bold text-lg">{product?.name}</h1>
+                  <h2 className="font-medium">${product?.price}</h2>
                 </div>
                
               </div>
               <div className="flex  top-10">
                   <button
-                    onClick={() => decreaseQuantity(product.id)}
+                    onClick={() => decreaseQuantity(product?.id)}
                     className="text-red-700 hover:underline font-[800] text-center w-5 text-xl btn"
                   >
                     -
                   </button>
                   <span className="mx-2 bg-white w-5 text-center justify-center">{product.qty}</span>
                   <button
-                    onClick={() => increaseQuantity(product.id)}
+                    onClick={() => increaseQuantity(product?.id)}
                     className="text-green-700 hover:underline font-[800] text-center text-xl w-5 h-5 btn"
                   >
                     +
                   </button>
                 </div>
               <div
-                onClick={() => deleteProduct(product.id)}
+                onClick={() => deleteProduct(product?.id)}
                 className="cursor-pointer hover:underline hover:text-red-700 ml-[35rem]"
               >
                 <svg

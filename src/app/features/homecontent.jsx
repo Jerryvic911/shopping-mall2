@@ -7,7 +7,7 @@ import Body from "./Body";
 import Collection from "./Collection";
 
 
-function HomeContent() {
+export default function HomeContent() {
   return (
     <div className="bg-[#fef7f1] overflow-hidden">
       <Navbar />
@@ -29,4 +29,4 @@ function HomeContent() {
   );
 }
 
-export default HomeContent;
+

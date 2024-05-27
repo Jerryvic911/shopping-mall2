@@ -19,7 +19,8 @@
     "react-paystack": "^5.0.0",
     "react-router-dom": "^6.23.0",
     "recoil-persist": "^5.1.0",
-    "router-dom": "^2.2.11"
+    "router-dom": "^2.2.11",
+    "sharp": "^0.33.4"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",

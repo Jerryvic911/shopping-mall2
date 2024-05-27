@@ -19,7 +19,7 @@ function CheckOutPage() {
         <h1 className=' md:text-center md:ml-[30rem] pt-3 uppercase font-bold text-2xl'>Fill in details</h1>
 
         <Link href="/cart">
-        <div className=" md:hidden relative pt-5 ml-[8rem]">
+        <div className=" md:hidden relative pt-5 md:ml-[8rem]">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"

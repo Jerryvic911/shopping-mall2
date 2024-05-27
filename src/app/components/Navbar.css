@@ -1,8 +1,8 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
     .head{
         justify-content: center;
         text-align: center;
-        gap: 3rem;
+        gap: 1rem;
     }
 
     .search-hide{
@@ -16,6 +16,7 @@
       .body{
         text-align: center;
         margin-top: 5rem;
+       padding-right: 50px;
     }
 
     .collection{
@@ -35,7 +36,7 @@
        }
 
        .card-text{
-        gap: 20px; 
+        gap: 15px; 
         padding-right: 20px;
        }
        
@@ -108,14 +109,28 @@
     }
 
     .preview{
-       position: fixed;
-       margin-right: 20rem;
+       position: relative;
+        justify-content: center;
+        left: 15rem;
+      
+    }
+    .preview-home{
+      position:fixed;
+      width:20rem;
+      height: auto;
+     
     }
 
     .preview-btn{
-        width: 14rem;
-        margin-top:0;
-        height:auto;
+        width: 10rem;
+        height: auto;
+        bottom: 3rem;
+        position: relative;
+    }
+
+    .preview-button{
+        position: relative;
+        right: 10rem;
     }
 
     .check{
@@ -136,14 +151,19 @@
     }
     .checkout-2{
         display: block;
+        
+    }
+
+    .checkout-2-id{
+        width: auto;
     }
 
     .checkout-final{
-        margin-left: 3rem;
+        margin-left: 0.3rem;
     }
 
     .checkout-head{
-        gap: 20px;
+        gap: 30px;
         margin: 0;
     }
 }

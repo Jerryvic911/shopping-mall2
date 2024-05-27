@@ -146,7 +146,7 @@ function InputDetails() {
             </svg>
           </label>
           <div className="checkout-2 flex gap-6">
-            <label className="input mt-5 input-bordered flex  bg-white items-center w-[20rem] gap-2">
+            <label className="checkout-2-id input mt-5 input-bordered flex  bg-white items-center w-[20rem] gap-2">
               <input type="text" className="grow" placeholder="Region" />
               <details className="dropdown bg-white">
                 <summary className=" text-black bg-white"></summary>
@@ -161,7 +161,7 @@ function InputDetails() {
               </details>
             </label>
 
-            <label className="input mt-5 input-bordered flex  bg-white items-center w-[18.4rem] gap-2">
+            <label className="checkout-2-id input mt-5 input-bordered flex  bg-white items-center w-[18.4rem] gap-2">
               <input type="text" className="grow" placeholder="City" />
               <details className="dropdown bg-white">
                 <summary className=" text-black bg-white"></summary>

@@ -11,8 +11,8 @@ const Product = (props) => {
       <div className="product">
 
      
-      <img className="img w-[15rem] h-[18rem]" src={productImage} alt="/"/>
-      <div className="preview-btn bg-white w-[15rem] h-[7.9rem]">
+      <img className="img w-[15rem] h-[15rem]" src={productImage} alt="/"/>
+      <div className="preview-btn bg-white w-[15rem] h-[7rem]">
         <div className=" pt-3 pl-5 uppercase">
           <h1 className="font-bold text-xl ">{productName}</h1>
           <p className="font-medium">${price}</p>

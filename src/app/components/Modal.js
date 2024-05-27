@@ -30,7 +30,7 @@ export function Modal(props) {
 	return (
 		<>
 			<div className="preview flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
-				<div className="md modal-box fixed top-[10rem] left-[23rem] bg-secondary text-black">
+				<div className="preview-home md modal-box fixed top-[10rem] left-[23rem] bg-secondary text-black">
 					<div className="flex ">
 						<img src={productImage} className="w-[10rem]" alt={productName} />
 						<div className="pl-10">
@@ -40,7 +40,7 @@ export function Modal(props) {
 						</div>
 					</div>
 
-					<div className="modal-action justify-between">
+					<div className=" modal-action justify-between">
 						<form method="dialog" className="flex">
 							<button
 								onClick={() => props.closeModal()}
@@ -50,7 +50,7 @@ export function Modal(props) {
 							</button>
 							<button
 								onClick={addToCart}
-								className="btn ml-[10rem] border-[#f8dbb3] border-2  hover:bg-primary w-[9rem] h-[2rem] rounded-lg hover:text-white "
+								className="preview-button btn ml-[10rem] border-[#f8dbb3] border-2  hover:bg-primary w-[9rem] h-[2rem] rounded-lg hover:text-white "
 								type="submit"
 							>
 								<div className="flex justify-center gap-3 ">

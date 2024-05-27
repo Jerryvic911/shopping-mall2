@@ -29,7 +29,7 @@ export function Modal(props) {
 
 	return (
 		<>
-			<div className=" flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+			<div className="preview flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
 				<div className="md modal-box fixed top-[10rem] left-[23rem] bg-secondary text-black">
 					<div className="flex ">
 						<img src={productImage} className="w-[10rem]" alt={productName} />

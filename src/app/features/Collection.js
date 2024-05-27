@@ -43,8 +43,8 @@ function Collection() {
             </div>
           </div>
 
-          <div className="">
-            <div className="bg-[#fbebd4] w-[22rem] h-[20rem] rounded-md">
+          <div className="pl-5">
+            <div className="bg-[#fbebd4] w-[20rem] h-[20rem] rounded-md">
               <Image
                 src={Shoe}
                 width={300}
@@ -58,7 +58,7 @@ function Collection() {
               <div className=" pt-3 bg-white w-[14rem] h-[5.1rem]">
                 <h1 className="text-2xl ml-4 font-semibold">Shoe collection</h1>
                 <Link
-                  href="/"
+                  href="/shop"
                   className=" text-text-primary font-medium text-sm underline ml-4"
                 >
                   Shop Now
@@ -85,7 +85,7 @@ function Collection() {
                 </h1>
                 
                 <Link
-                  href="/cart"
+                  href="/shop"
                   className=" text-text-primary font-medium text-sm underline ml-4"
                 >
                   Shop Now

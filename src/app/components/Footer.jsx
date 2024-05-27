@@ -92,7 +92,7 @@ function Footer() {
         </div>
 
         {/**Information */}
-        <div className="flex flex-row mr-[10rem] gap-[5rem]">
+        <div className="footer-text flex flex-row mr-[10rem] gap-[5rem]">
 
 
           <div>

@@ -41,7 +41,7 @@ function InputDetails() {
 		<div className="page ml-20 mt-7 h-full">
 			<div className="check flex">
 				<div className="bg-white pl-4 rounded-md shadow-md ">
-					<div className="flex gap-5 mt-4 ">
+					<div className="checkout-name flex gap-5 mt-4 ">
 						<label className="input input-bordered bg-white flex items-center w-[15rem] gap-2">
 							<input
 								onChange={handleChange}
@@ -145,7 +145,7 @@ function InputDetails() {
               />
             </svg>
           </label>
-          <div className="flex gap-6">
+          <div className="checkout-2 flex gap-6">
             <label className="input mt-5 input-bordered flex  bg-white items-center w-[20rem] gap-2">
               <input type="text" className="grow" placeholder="Region" />
               <details className="dropdown bg-white">
@@ -189,7 +189,7 @@ function InputDetails() {
 					</div>
 				</div>
 
-				<div className="bg-white w-[19rem] h-[15rem] ml-[10rem] rounded-md shadow-md">
+				<div className="checkout-final bg-white w-[19rem] h-[15rem] ml-[10rem] rounded-md shadow-md">
 					<h1 className="text-center font-bold text-xl border-b-2 mt-4 uppercase">
 						Order summary
 					</h1>

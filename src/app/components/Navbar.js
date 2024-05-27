@@ -32,7 +32,7 @@ function Navbar() {
       </div>
 
       <Link href="/cart">
-        <div className=" md:hidden relative">
+        <div className=" md:hidden relative pr-20">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"

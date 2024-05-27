@@ -18,7 +18,7 @@ function Cards() {
           </h1>
 
           <div className=" text-amber-950 font-semibold text-lg mt-6">
-            <ul className="flex gap-12 items-center  justify-center cursor-pointer">
+            <ul className="card-text flex gap-12  items-center  justify-center cursor-pointer">
               <li className=" hover:underline">All</li>
               <li  className=" hover:underline">Latest</li>
               <li  className=" hover:underline">Best-Selling</li>

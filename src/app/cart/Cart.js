@@ -45,16 +45,16 @@ function Orders() {
         carts.map((product) => (
           <div
             key={product.id}
-            className="my-4 bg-secondary gap-5 shadow-md rounded-md shadow-slate-400/70 w-[50rem] h-[8rem] flex items-center"
+            className=" cart my-4 bg-secondary gap-5 shadow-md rounded-md shadow-slate-400/70 w-[50rem] h-[8rem] flex items-center"
           >
             <img
               src={product.img}
-              className="h-[8rem] w-[10rem]"
+              className="cart-img h-[8rem] w-[6rem]"
               alt={product.name}
             />
-            <div className="grid grid-cols-3">
+            <div className="cart_text grid grid-cols-3">
               <div className="grid grid-cols-2">
-                <div>
+                <div className="cart-text">
                   <h1 className="font-bold text-lg">{product.name}</h1>
                   <h2 className="font-medium">${product.price}</h2>
                 </div>
@@ -109,7 +109,7 @@ function Orders() {
           </div>
         ))
       ) : (
-        <div className="shadow-slate-400/70 w-[50rem] flex-col items-center h-[8rem] flex justify-center">
+        <div className="cart-return shadow-slate-400/70 w-[50rem] flex-col items-center h-[8rem] flex justify-center">
           <p className="text-2xl font-[700]">Empty Cart</p>
           <Link href="/shop">
             <p className="underline">

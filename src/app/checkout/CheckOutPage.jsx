@@ -4,18 +4,19 @@ import InputDetails from './InputDetails'
 import React from "react";
 import { useRecoilValue } from "recoil";
 import { cartAtom } from "../atoms/cart";
+import "@/app/components/Navbar.css"
 
 function CheckOutPage() {
   const carts = useRecoilValue(cartAtom);
  
   return (
     <div>
-        <div className=' bg-white h-12 flex flex-row overflow-x-hidden'>
+        <div className='checkout-head bg-white h-12 flex flex-row overflow-x-hidden'>
             <Link href="/">
             <h1 className='pt-3 pl-10 text-primary text-lg font-bold'>BWE</h1>
             </Link>
          
-        <h1 className=' ml-[35%] pt-3 uppercase font-bold text-2xl'>Fill in details</h1>
+        <h1 className=' md:text-center md:ml-[30rem] pt-3 uppercase font-bold text-2xl'>Fill in details</h1>
 
         <Link href="/cart">
         <div className=" md:hidden relative pt-5 ml-[8rem]">

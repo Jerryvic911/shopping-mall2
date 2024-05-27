@@ -10,7 +10,7 @@ import { BrowserRouter } from "react-router-dom";
 export default function Home() {
   return (
     
-    <div className="h-screen w-screen bg-[#fef7f1]  text-black">
+    <div className="h-screen w-screen bg-[#fef7f1] overflow-x-hidden text-black">
       <ShopContextProvider>
         <BrowserRouter>
         <HomeContent/>

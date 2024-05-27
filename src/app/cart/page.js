@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import Orders from "./Cart";
 import Link from "next/link";
 import { useRecoilValue } from "recoil";
-import  {totalAmountSelector} from "@/app/atoms/cart"
+
 import  {cartAtom} from "@/app/atoms/cart"
 
 function Cart() {
@@ -22,7 +22,7 @@ function Cart() {
 
   console.log(total, "total")
 	return (
-		<div className="h-full bg-secondary text-black">
+		<div className="h-full bg-secondary text-black overflow-x-hidden">
 			<Navbar />
 
       <div className="flex flex-col md:flex-row justify-between">

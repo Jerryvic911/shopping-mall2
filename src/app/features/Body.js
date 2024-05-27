@@ -42,7 +42,7 @@ function Body() {
         alt="man"
         width={500}
         height={500}
-        className="mt-20"
+        className="mt-20" 
       />
       </div>
       

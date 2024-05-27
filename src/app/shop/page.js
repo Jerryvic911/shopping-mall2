@@ -25,7 +25,7 @@ function Cart() {
   
 
   return (
-    <div className=' bg-secondary h-full text-black'>
+    <div className=' bg-secondary h-full text-black overflow-x-hidden'>
       <Navbar/>
       <div className='main grid grid-cols-4 mt-[5rem] ml-20 mr-20 gap-7'>
         {PRODUCTS.map ((product) =><Product data={product} toggleModal={toggleModal}/>)}

@@ -59,4 +59,34 @@
         align-items: center;
         justify-content: center;
     }
+
+    .md{
+        justify-content: center;
+        position: fixed;
+        align-items: center;
+        left: 5rem;
+    }
+
+    .img{
+        width: 20rem;
+        background: transparent;
+    }
+
+    .preview-btn{
+        width: 14rem;
+        margin-top:0;
+        height:auto;
+    }
+
+    .check{
+        display: block;
+    }
+
+    .deliver{
+        width: fit-content;
+    }
+
+    .page{
+        margin-right: 50px;
+    }
 }

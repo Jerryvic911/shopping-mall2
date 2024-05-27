@@ -9,7 +9,7 @@ import Collection from "./Collection";
 
 function HomeContent() {
   return (
-    <div className="bg-[#fef7f1]">
+    <div className="bg-[#fef7f1] overflow-hidden">
       <Navbar />
 
      <Body/>

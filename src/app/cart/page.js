@@ -32,7 +32,7 @@ function Cart() {
         </div>
 
         {/* Right column */}
-        <div className="text-center md:w-1/4 md:mr-10 bg-white mt-5 md:mt-20 shadow-md">
+        <div className="text-center md:w-1/4 md:mr-10 bg-white mt-5 md:mt-20 shadow-md h-[12rem]">
           <div className="ml-4 pt-5">
             <h1 className="font-bold text-lg border-b-2 capitalize">
               Order Summary

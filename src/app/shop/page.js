@@ -28,7 +28,9 @@ function Cart() {
     <div className=' bg-secondary h-full text-black overflow-x-hidden'>
       <Navbar/>
       <div className='main grid grid-cols-4 mt-[5rem] ml-20 mr-20 gap-7'>
-        {PRODUCTS.map ((product) =><Product data={product} toggleModal={toggleModal}/>)}
+      {PRODUCTS.map((product) => (
+  <Product key={product.id} data={product} toggleModal={toggleModal} />
+))}
       </div>
       <div>
         {isOpen && <Modal currentProduct={currentProduct} closeModal={closeModal}/>}

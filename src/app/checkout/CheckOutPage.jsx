@@ -11,7 +11,7 @@ function CheckOutPage() {
  
   return (
     <div>
-        <div className='checkout-head bg-white h-12 flex flex-row overflow-x-hidden'>
+        <div className='checkout-head bg-white h-12 w-full flex flex-row overflow-x-hidden'>
             <Link href="/">
             <h1 className='pt-3 pl-10 text-primary text-lg font-bold'>BWE</h1>
             </Link>

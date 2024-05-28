@@ -1,8 +1,11 @@
-@media screen and (max-width: 500px) {
+@media  (max-width: 500px ) {
+   
     .head{
-        justify-content: center;
-        text-align: center;
-        gap: 1rem;
+        position: relative;
+        gap: 10px;
+    }
+    .navbar-head{
+        display: none;
     }
 
     .search-hide{
@@ -14,63 +17,71 @@
       }
 
       .body{
-        text-align: center;
-        margin-top: 5rem;
-       padding-right: 50px;
+       position: relative;
+       right: 20px;
+       padding-top: 5rem;
     }
 
     .collection{
-        text-align: center;
-        align-items: center;
-        padding: auto;
+        
+        right: 50px;
+        position: relative;
        }
+
     .collection-btn{
       display:none;
        }
 
        .img{
         display: grid;
-        align-items: center;
-        padding-left: 5px;
-        justify-content: center;
+       
        }
 
        .card-text{
         gap: 15px; 
         padding-right: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
        }
        
        .card{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 10px; 
         padding-right: 20px;
        }
        
        .perks{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        position: relative;
+        left: 50px;
        }
 
        .footer{
         display:grid;
+        position: relative;
+        right: 50px;
        }
        .footer-text{
+        
         display:grid;
-        grid-template-columns: repeat(2, 1fr);
+        
        }
 
     .cart{
      width: auto;
+     height: auto;
     }
     .cart-text{
-        display:grid
-      
+        display:block;
+        
     }
 
     .cart_text{
-        display: grid;
+        display: grid   ;
         justify-content: space-between;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .cart-img{
@@ -89,9 +100,8 @@
 
     .main{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 10px;
-      
         align-items: center;
         justify-content: center;
     }
@@ -109,20 +119,19 @@
     }
 
     .preview{
-       position: relative;
-        justify-content: center;
-        left: 15rem;
-      
+       position: fixed;
+       
     }
     .preview-home{
       position:fixed;
-      width:20rem;
-      height: auto;
+        left: 10px;
+        
+      
      
     }
 
     .preview-btn{
-        width: 10rem;
+       
         height: auto;
         bottom: 3rem;
         position: relative;
@@ -135,7 +144,7 @@
 
     .check{
         display: block;
-        
+        width: auto;
     }
 
     .deliver{
@@ -143,15 +152,18 @@
     }
 
     .page{
-        margin-right: 50px;
+       position: relative;
+       right: 60px;
+       width: 17rem;
     }
 
     .checkout-name{
         display: block;
+        width: auto;
     }
     .checkout-2{
         display: block;
-        
+        width: auto;
     }
 
     .checkout-2-id{
@@ -159,11 +171,16 @@
     }
 
     .checkout-final{
-        margin-left: 0.3rem;
+      position: relative;
+      right: 9rem;
+      width: 15rem;
     }
 
     .checkout-head{
-        gap: 30px;
-        margin: 0;
+      position: relative;
+      right: 15px;
+      gap:4px;
+      width:100%;
     }
 }
+    

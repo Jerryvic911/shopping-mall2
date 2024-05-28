@@ -23,7 +23,7 @@ function Cards() {
               <li  className=" hover:underline">Latest</li>
               <li  className=" hover:underline">Best-Selling</li>
               <li  className=" hover:underline">Top-Rated</li>
-              <li  className=" hover:underline">Trandy</li>
+            
             </ul>
           </div>
         </div>

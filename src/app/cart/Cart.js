@@ -82,9 +82,13 @@ function Orders() {
                         +
                       </button>
 
-                      <div
+                      
+                 
+                  </div>
+                  <div
                         onClick={() => deleteProduct(product.id)}
-                        className="cursor-pointer hover:underline hover:text-red-700 ml-12 pt-3"
+                        className="cursor-pointer hover:underline hover:text-red-700 
+                         relative"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -101,8 +105,6 @@ function Orders() {
                           />
                         </svg>
                       </div>
-                 
-                  </div>
                 </div>
               </div>
             </div>

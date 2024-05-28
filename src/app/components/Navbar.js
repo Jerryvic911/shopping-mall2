@@ -4,15 +4,20 @@ import Link from "next/link";
 import "./Navbar.css";
 import { useRecoilValue } from "recoil";
 import { cartAtom } from "../atoms/cart";
+import { SideBar } from "./Sidebar";
 
 function Navbar() {
   const carts = useRecoilValue(cartAtom);
   return (
     <div className="head flex flex-row justify-between items-center pt-5 mr-10 md:items-center">
-      <div className="ml-12  pl-12 cursor-pointer">
-        <ul className="flex gap-5 text-[#7c6037] text-lg font-bold">
+      <div className="sidebar md:hidden">
+      <SideBar/>
+      </div>
+       
+      <div className="navbar-head ml-12  pl-12 cursor-pointer">
+        <ul className="  flex gap-5 text-[#7c6037] text-lg font-bold">
           <Link href="/">
-            <li className="hover:underline hover:ease-in hover:duration-300">
+            <li className="  hover:underline hover:ease-in hover:duration-300">
               Home
             </li>
           </Link>
@@ -27,12 +32,12 @@ function Navbar() {
 
       <div className="text-center">
         <Link href="/" className="text-[#ed9e2d] font-extrabold text-2xl">
-          BWE
+         BWE
         </Link>
       </div>
 
       <Link href="/cart">
-        <div className=" md:hidden relative pr-20">
+        <div className=" md:hidden relative pr-30">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"

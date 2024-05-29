@@ -53,8 +53,9 @@ export function SideBar() {
             </svg>
           </IconButton>
         </div>
+        <div className=" cursor-pointer">
         <Typography color="gray" className="font-normal">
-          <div className=" cursor-pointer">
+          
             <ul className=" text-[#7c6037] text-lg font-bold">
               <Link href="/">
                 <li className="hover:underline hover:ease-in hover:duration-300">
@@ -68,8 +69,9 @@ export function SideBar() {
               </Link>
               <li className="hover:underline">Features</li>
             </ul>
-          </div>
+          
         </Typography>
+        </div>
       </Drawer>
     </React.Fragment>
   );

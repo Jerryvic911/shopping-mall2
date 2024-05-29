@@ -19,7 +19,7 @@ const Product = (props) => {
           
         </div>
 
-        <div className="text-center ">
+        <div className="shop-text text-center">
           <button
             className=" border-[#f8dbb3] border-2  hover:bg-primary w-[9rem] h-[2rem] rounded-lg hover:text-white mt-4"
             onClick={() => props.toggleModal(id,  productName, productImage, price, productInfo)}

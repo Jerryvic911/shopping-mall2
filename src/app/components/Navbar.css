@@ -1,4 +1,181 @@
-@media  (max-width: 500px ) {
+@media screen and (max-width:700px) {
+    .head{
+        position: relative;
+        gap: 10px;
+    }
+    .navbar-head{
+        display: none;
+    }
+
+    .search-hide{
+        display: none;
+    }
+
+    .img-hide{
+        display: none;
+      }
+
+      .body{
+       position: relative;
+       right: 20px;
+       padding-top: 5rem;
+    }
+
+    .collection{
+        
+        right: 45px;
+        position: relative;
+       }
+
+    .collection-btn{
+      display:none;
+       }
+
+       .img{
+        display: grid;
+       
+       }
+
+       .card-text{
+        gap: 30px; 
+        padding-right: 20px;
+       
+       }
+       
+       .card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px; 
+        right: 10px;
+        position: relative;
+        
+       }
+       
+       .perks{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: relative;
+        left: 50px;
+       }
+
+       .footer{
+        display:grid;
+        position: relative;
+        right: 50px;
+       }
+       
+
+    .cart{
+     width: auto;
+     height: auto;
+    }
+    .cart-text{
+        display:block;
+    }
+
+    .cart_text{
+        display: grid   ;
+        justify-content: space-between;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cart-img{
+        max-width: fit-content;
+    }
+
+    .cart.return{
+        width: auto;
+        text-align: center;
+    }
+
+       .product{
+        display: grid;
+        gap: 10px; 
+    }
+
+    .main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .md{
+        justify-content: center;
+        position: fixed;
+        align-items: center;
+        left: 5rem;
+    }
+
+    .img{
+        background: transparent;
+        width:20rem;
+    }
+
+    
+
+    .preview{
+       position: fixed;
+       
+    }
+    .preview-home{
+      position:fixed;
+        left: 5rem;
+    }
+
+    .preview-btn{
+        height: auto;
+        width: auto;
+        position: relative;
+        margin-bottom: 20px;
+        bottom: 20px;
+    }
+
+  
+
+    .check{
+        display: block;
+        width: auto;
+    }
+
+    .deliver{
+        width: fit-content;
+    }
+
+    .page{
+       position: relative;
+       right: 60px;
+       width: 30rem;
+    }
+
+    .checkout-name{
+        display: block;
+        width: auto;
+    }
+    .checkout-2{
+        display: block;
+        width: auto;
+    }
+
+    .checkout-2-id{
+        width: auto;
+    }
+
+    .checkout-final{
+      position: relative;
+      width: 16rem;
+    }
+
+    .checkout-text{
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+        gap: 10rem;
+    }
+}
+
+@media screen and  (max-width: 420px ) {
    
     .head{
         position: relative;
@@ -24,7 +201,7 @@
 
     .collection{
         
-        right: 50px;
+        right: 45px;
         position: relative;
        }
 
@@ -48,14 +225,16 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 10px; 
-        padding-right: 20px;
+        left: 40px;
+        position: relative;
+        
        }
        
        .perks{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         position: relative;
-        left: 50px;
+        left: 80px;
        }
 
        .footer{
@@ -118,6 +297,8 @@
         background: transparent;
     }
 
+    
+
     .preview{
        position: fixed;
        
@@ -133,7 +314,7 @@
     .preview-btn{
        
         height: auto;
-        bottom: 3rem;
+        width: auto;
         position: relative;
     }
 
@@ -154,7 +335,7 @@
     .page{
        position: relative;
        right: 60px;
-       width: 17rem;
+       width: 19rem;
     }
 
     .checkout-name{
@@ -173,14 +354,21 @@
     .checkout-final{
       position: relative;
       right: 9rem;
-      width: 15rem;
+      width: 16rem;
     }
+        .checkout-head{
+            position: relative;
+            height: auto;
+        }
+    
 
-    .checkout-head{
-      position: relative;
-      right: 15px;
-      gap:4px;
-      width:100%;
+    .checkout-text{
+        position: relative;
+      display: contents;
     }
 }
+
+
+
+
     
